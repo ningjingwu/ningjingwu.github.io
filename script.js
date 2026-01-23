@@ -309,7 +309,6 @@ document.addEventListener('DOMContentLoaded', () => {
     'assets/Gallery/P1010369.jpg',
     'assets/Gallery/P1010454.jpg',
     'assets/Gallery/P1010630.jpg',
-    'assets/Gallery/P1010749.jpg',
     'assets/Gallery/P1010834.jpg',
     'assets/Gallery/P1010867.jpg',
     'assets/Gallery/P1010926.jpg',
@@ -339,7 +338,11 @@ document.addEventListener('DOMContentLoaded', () => {
     'assets/Gallery/P1050869.jpg',
     'assets/Gallery/P1010434.jpg',
     'assets/Gallery/P1013226.jpg',
-    'assets/Gallery/P1040124.JPG'
+    'assets/Gallery/P1040124.JPG',
+    'assets/Gallery/P1040124.JPG',
+    'assets/Gallery/P1012256.JPG',
+    'assets/Gallery/P1012421.JPG',
+    'assets/Gallery/P1012469.JPG'
   ];
 
 function shuffle(arr) {
