@@ -1,3 +1,4 @@
+
 class PortfolioGallery {
     constructor() {
         this.selectedImage = null;
