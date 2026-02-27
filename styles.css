@@ -1,0 +1,251 @@
+/* Minimal, no-theme, monospace, bullet-tree layout */
+
+:root{
+  --bg: #f5f5f5;
+  --text: #111111;
+  --muted: #444;
+  --border: #ddd;
+  --footer-h: 44px;
+
+  /* Link styling */
+  --link: #2553ab;        /* muted link */
+  --link-hover: #111111;  /* hover color */
+}
+
+html[data-theme="dark"]{
+  --bg: #111111;
+  --text: #f5f5f5;
+  --muted: #b6b6b6;
+  --border: rgba(255,255,255,0.18);
+
+  /* Link styling (dark) */
+  --link: #89b7ff;        /* muted link */
+  --link-hover: #f5f5f5;  /* hover color */
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  line-height: 1.45;
+  font-size: 16px;
+}
+
+/* Links: muted, no underline, color changes only on hover */
+a,
+a:visited{
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+a:focus-visible{
+  outline: 2px solid var(--border);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Make room so content never hides behind the fixed footer */
+.container {
+  max-width: 760px;
+  padding: 48px 24px calc(80px + var(--footer-h));
+  margin: 0 auto;
+}
+
+/* Fixed footer (always visible) */
+.site-footer{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  height: var(--footer-h);
+  padding: 0;
+  display: flex;
+  align-items: center;
+
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+
+  font-size: 12px;
+  color: var(--muted);
+}
+
+/* Match the same text margins as .container + true vertical centering */
+.site-footer .footer-inner{
+  width: min(760px, calc(100% - 48px)); /* container padding is 24px each side */
+  margin: 0 auto;
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: nowrap;
+}
+
+/* Normalize vertical metrics inside footer */
+.footer-left,
+.footer-links,
+.site-footer a{
+  line-height: 1;
+}
+
+.footer-links{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.site-footer a{
+  font-size: 12px;
+}
+
+/* Headings */
+h1{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  margin: 0 0 14px;
+}
+
+.page-title{
+  text-align: left; /* inner pages */
+  font-size: 32px;
+  margin-top: 10px;
+}
+
+.tagline{
+  text-align: center;
+  margin: 0 0 28px;
+  color: var(--muted);
+}
+
+.page-title + .tagline{
+  text-align: left;
+}
+
+/* Lists */
+ul{
+  margin: 0;
+  padding-left: 22px;
+}
+
+.tree > li{
+  margin: 12px 0;
+}
+
+.tree ul li{
+  margin: 8px 0;
+}
+
+/* Nested bullets */
+.tree{ list-style-type: disc; }
+.tree ul{ list-style-type: circle; }
+.tree ul ul{ list-style-type: square; }
+
+.label{
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.muted{
+  color: var(--muted);
+}
+
+/* Theme toggle button (icon) */
+.theme-toggle{
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  border-radius: 999px;
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.theme-toggle:focus-visible{
+  outline: 2px solid var(--border);
+  outline-offset: 2px;
+}
+
+/* Gentle theme transition (not the button) */
+html, body, .site-footer{
+  transition: background-color 220ms ease, color 220ms ease, border-color 220ms ease;
+}
+
+/* Smooth text color shifts (optional) */
+*{
+  transition: color 220ms ease;
+}
+
+@media (prefers-reduced-motion: reduce){
+  html, body, .site-footer, h1, p, li, span, a, .label{
+    transition: none !important;
+  }
+}
+
+/* ── Border ──────────────────────────────────────────────────── */
+hr {
+  border: none;
+  height: 1px;
+  background: #999; /* line color */
+}
+
+.container img,
+img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  max-height: 50vh;  
+  height: auto;      
+  border-radius: var(--radius);
+  margin: 20px auto;
+}
+
+img + em,
+figure figcaption {
+  display: block;
+  font-size: 12px;
+  color: var(--muted);
+  text-align: center;
+  margin: -12px auto 20px;
+}
+
+/* ── ASCII tree / code blocks ────────────────────────────────── */
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, "Cascadia Code", Consolas, monospace;
+  font-size: 12px;
+  line-height: 1.1;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  overflow-x: auto;
+  margin: 20px 0;
+  color: var(--text);
+}
+
+pre code {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  background: none;
+  padding: 0;
+  color: inherit;
+}

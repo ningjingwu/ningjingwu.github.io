@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NINGJING - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="image/png" sizes="16x16" rel="icon" href="assets\Favicon\icons8-n-badges-16.png"> <link type="image/png" sizes="32x32" rel="icon" href="assets\Favicon\icons8-n-badges-32.png"> <link type="image/png" sizes="96x96" rel="icon" href="assets\Favicon\icons8-n-badges-96.png">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, must-revalidate">
+    <!--<script>window.location.replace("https://ningjingwu.super.site/");</script>-->
+
+</head>
+
+<!-- NEW: Gallery Modal (place before </body>) -->
+<div class="modal-overlay" id="galleryModal" aria-hidden="true">
+  <div class="modal-content-gallery" role="dialog" aria-modal="true" aria-labelledby="galleryTitle">
+    <button class="modal-close" id="galleryClose" aria-label="Close gallery">×</button>
+    <div class="modal-scroll-container" id="galleryScrollContainer" tabindex="0">
+      <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
+    </div>
+  </div>
+</div>
+
+<body>
+    <div class="portfolio-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <h1 class="designer-name">NINGJING</h1>
+                    <p class="designer-description">
+                        is a designer and</p><a href="../index.html" target="_blank" rel="noreferrer">writer</a>.</p> 
+                        <br> Available for work.
+                    </p>
+                    <br>
+                    <a href="#" class="contact-link-js-open-gallery">Browse photo gallery</a> <!-- NEW -->
+
+            </div>
+            <div class="sidebar-contact">
+                <div class="contact-links">
+                    <div class="contact-spacer"></div>
+                    <a href="assets/Ningjing_Wu_Resume.pdf" class="contact-link" target="blank">Resume</a>
+                    <a href="mailto:wu.ning.jing.2001@gmail.com" class="contact-link">wu.ning.jing.2001@gmail.com</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- First Grid -->
+            <section class="project-grid main-grid">
+                <article class="project-card" data-image-id="1">
+                    <img src="assets\URA\URA (1).gif" alt="UI/UX Design for Urban Redevelopment Agency" class="project-image">
+                    <h3 class="project-title">UI/UX Design for Urban Redevelopment Agency</h3>
+                </article>
+                <article class="project-card" data-image-id="2">
+                    <img src="assets\Oxfam\Oxfam Thumbnail.avif" alt="Oxfam Magazine" class="project-image">
+                    <h3 class="project-title">Oxfam Magazine</h3>
+                </article>
+            </section>
+            
+            <!-- Third Grid -->
+            <section class="project-grid third-grid">
+                <article class="project-card" data-image-id="3">
+                    <img src="assets\EWG\EWG Thumbnail.avif" alt="Tembusu College Module Book" class="project-image">
+                    <h3 class="project-title">Tembusu College Module Book</h3>
+                </article>
+                <article class="project-card" data-image-id="4">
+                    <img src="assets\Posters\2.avif" alt="Lucid State Gig Poster" class="project-image">
+                    <h3 class="project-title">Lucid State Gig Poster</h3>
+                </article>
+            </section>
+
+
+            <!-- Third Grid -->
+            <section class="project-grid second-grid">
+                <article class="project-card" data-image-id="5">
+                    <img src="assets\Posters\1.avif" alt="Divinity Magazine Launch Party Poster" class="project-image">
+                    <h3 class="project-title">Divinity Magazine Launch Party Poster</h3>
+                </article>
+                <article class="project-card" data-image-id="6">
+                    <img src="assets\GP Textbook\GP Textbook Thumbnail.avif" alt="Academia Singapore GP Textbook" class="project-image">
+                    <h3 class="project-title">Academia Singapore GP Textbook</h3>
+                </article>
+            </section>
+
+            <!-- Third Grid -->
+            <section class="project-grid sixth-grid">
+                <article class="project-card" data-image-id="11">
+                    <img src="assets\Gradbook\Horizontal_Book_Mockup_6.avif" alt="NUS High School Class of 2020 Year Book" class="project-image">
+                    <h3 class="project-title">NUS High School Class of 2020 Year Book</h3>
+                </article>
+                <article class="project-card" data-image-id="12">
+                    <img src="assets\Tech Talk.avif" alt="Poster for UTC2102 Presentation" class="project-image">
+                    <h3 class="project-title">Poster for UTC2102 Presentation</h3>
+                </article>
+            </section>
+            
+            <!-- Second Grid -->
+            <section class="project-grid fourth-grid">
+                <article class="project-card" data-image-id="7">
+                    <img src="assets\Synthetic Memories\Synthetic Memories-01.avif" alt="Synthetic Memories" class="project-image">
+                    <h3 class="project-title">Synthetic Memories, a Creative Coding Project</h3>
+                </article>
+                <article class="project-card" data-image-id="8">
+                    <img src="assets\Diptyque.avif" alt="Diptyque Iconic Scents Poster" class="project-image">
+                    <h3 class="project-title">Diptyque Iconic Scents Poster</h3>
+                </article>
+                <div class="spacer"></div>
+            </section>
+
+
+            
+            <!-- Fourth Grid -->
+            <section class="project-grid fifth-grid">
+                
+                <article class="project-card" data-image-id="9">
+                    <img src="assets\Personal Brand Guide\Final Brand Guide11.avif" alt="Personal Brand Guide" class="project-image">
+                    <h3 class="project-title">Personal Brand Guide</h3>
+                </article>
+                <article class="project-card" data-image-id="10">
+                    <img src="assets\Logo Animation.gif" alt="3D Logo Animation" class="project-image">
+                    <h3 class="project-title">3D Logo Animation</h3>
+                </article>
+            </section>
+
+        <!-- Contact Footer for Tablet -->
+        <footer class="contact-footer tablet-footer">
+            <div class="footer-content">
+                <a href="assets/Ningjing_Wu_Resume.pdf" class="contact-link" target="blank">Resume</a>
+                <a href="#" class="contact-link-js-open-gallery-mobile">>Photo gallery</a> <!-- NEW -->
+                <a href="mailto:wu.ning.jing.2001@gmail.com" class="contact-link">Contact</a>
+
+            </div>
+        </footer>
+
+        <!-- Contact Footer for Mobile -->
+        <footer class="contact-footer mobile-footer">
+            <div class="footer-content">
+                <a href="https://www.linkedin.com/in/ningjing-wu/" class="contact-link" target="blank">LinkedIn</a>
+                <a href="#" class="contact-link-js-open-gallery-mobile">Photo gallery</a> <!-- NEW -->
+                <a href="mailto:wu.ning.jing.2001@gmail.com" class="contact-link">Contact</a>
+
+            </div>
+        </footer>
+
+        <!-- Modal -->
+        <div class="modal-overlay" id="imageModal">
+    <div class="modal-content">
+        <button class="modal-close" id="modalClose" aria-label="Close modal">×</button>
+            <div class="modal-scroll-container" id="modalScrollContainer">
+            <div id="modalTitle"></div>
+            <div id="modalBodyContent"></div>
+            <div id="modalMediaContainer"></div>
+
+            <div id="modalBodyImage"></div>
+    </div>
+    </div>
+</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
