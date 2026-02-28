@@ -83,14 +83,14 @@ Academia's instructional materials were spread across Drive folders, written by 
 :::challenge
 **⚡ Challenge:** 
 
-Standards fail when they require a workshop to follow. The bigger problem: without style alignment between Docs and InDesign, even well-structured drafts required manual reformatting on every import.
+Without style alignment between Docs and InDesign, even well-structured drafts required manual reformatting on every import. Educators do not have the between classes to ensure perfect formatting, a simple universal template was needed. 
 :::
 
 Built a Google Docs template that embedded conventions directly into the structure—heading levels, caption formats, and bulleting. Mapped every Docs content type to a corresponding InDesign paragraph or object style, so imported content landed close to final format. Managed the full style library in InDesign: defining, naming, and maintaining paragraph styles, character styles, and object styles across master pages to ensure consistency as chapters were added. Built and operated the production system end-to-end—placing and flowing content, managing linked assets, enforcing typographic hierarchy and grid-based spacing, and preparing pages for export and QA.
 
 ![Google Docs Template](assets/academia_word.png)
 ![Full InDesign style library](assets/academia_indesign_1.png)
-*Google Docs template with styles  mapped to InDesign template*
+*Google Docs template with styles mapped directly to a ready for print InDesign template*
 
 :::outcomes
 **✅ Outcomes**
@@ -98,7 +98,7 @@ Built a Google Docs template that embedded conventions directly into the structu
 - Docs-to-InDesign style mapping made import predictable—minimal reformatting per chapter
 - Full InDesign style library maintained across master pages and all chapter files
 - Consistent typographic hierarchy and layout grid across the full release
-- Layout production repeatable, not bespoke
+- Repeatable layout production 
 :::
 
 ---
@@ -109,7 +109,7 @@ Built a Google Docs template that embedded conventions directly into the structu
 :::challenge
 **⚡ Challenge:**
 
-Chapters and research were scattered across folder and an disorganised collaborative effort made it so that multiple versions of contested content. There was no clear decision on which version of the content was final as no single person was the authorative author.
+Chapters and research were scattered across folder and an disorganised collaborative effort made it so that there were multiple versions of contested content. There was no clear decision on which version of the content was final as no single person was the authorative author.
 :::
 
 Catalogued the full Drive, mapped ownership, identified duplicates, and resolved version conflicts. Produced a governed source folder with a naming convention, an Excel tracking sheet, and an audit log of every merge, cut, and superseded draft.
@@ -194,7 +194,7 @@ Shared Drive/
 :::challenge
 **⚡ Challenge:** 
 
-Multiple contributors meant multiple instincts about what a heading, caption, or exercise instruction should look like. Without shared conventions, every draft needed editorial intervention before it could be edited for content.
+Multiple contributors meant multiple instincts about what a heading, caption, or exercise instruction should contain. Without shared conventions, every draft needed editorial intervention before it could be edited for content.
 :::
 
 Developed a content style guide covering four areas: **structure** (how chapters open, how sections close), **labelling** (heading and caption conventions tied to content type), **sequencing** (exercises follow the concept they apply, with explicit back-references), and **voice** (authoritative but not distant—consistent register across all contributors regardless of subject area). Guidelines were written into the authoring template directly so they were encountered in context, not as a separate document contributors had to remember to consult.

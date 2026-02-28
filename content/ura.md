@@ -62,8 +62,8 @@ ePlanner 3D is a dense geospatial platform used by Singapore government planners
 :::
 :::col
 **⛓️ Constraints**
-- ArcGIS Calcite + internal UDS vocabulary
-- Limited screen space—every word competes
+- ArcGIS Calcite + internal URA Design System (UDS) vocabulary
+- Limited screen space
 - Copy had to ship within existing component constraints
 :::
 ::::
@@ -103,7 +103,7 @@ Authored modular workflow guides breaking each task into stages with explicit ex
 :::challenge
 **⚡ Challenge:** 
 
-Help copy must surface at the exact moment of need *and* be specific enough that search works. User vocabulary and system taxonomy rarely match—bridging that gap is the writing problem.
+Help copy must surface at the exact moment of need *and* be specific enough that search works. 
 :::
 
 Designed the copy architecture for an embedded help library: searchable item naming, *What's New* announcement patterns.
@@ -181,7 +181,7 @@ System messages must be actionable and consistent—across every state. Copy als
 
 Documented reusable toast and tooltip components with full state coverage.
 
-![ePlanner 3D legacy interface](assets/ura_tooltip.png)
+![Tooltip component added to in-house design system](assets/ura_tooltip.png)
 *Tooltip component added to in-house design system*
 
 :::outcomes
