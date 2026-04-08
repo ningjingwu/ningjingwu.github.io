@@ -90,11 +90,11 @@ h2, h3, h4 {
   white-space: nowrap;
 }
 
-.container-meta-row {
+html[data-theme="dark"] .container-meta-row {
   background: var(--accent-soft);
   border-radius: var(--radius);
-  padding: 4px 12px;
 }
+
 
 /* ── Metrics grid ────────────────────────────────────────────── */
 .container-metrics {
@@ -107,10 +107,15 @@ h2, h3, h4 {
 .container-metric {
   border: 1px solid var(--metric-border);
   border-top: 3px solid var(--accent);
-  background: var(--accent-soft); /* change from var(--metric-bg) */
+  background: var(--metric-bg);
   padding: 16px 18px;
   border-radius: var(--radius);
 }
+
+html[data-theme="dark"] .container-metric {
+  background: var(--accent-soft);
+}
+
 .container-metric p:first-child {
   margin: 0 0 6px;
   font-size: 28px;
