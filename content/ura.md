@@ -6,7 +6,7 @@ title: 'Urban Redevelopment Authority: Documenting ePlanner 3D'
 ## Singapore Urban Redevelopment Authority: Documenting ePlanner 3D
 
 :::tagline
-UX Writing & Technical Communication | Case Study
+Technical Writing & Audience Research
 :::
 
 </div>
@@ -21,6 +21,7 @@ UX Writing & Technical Communication | Case Study
 :::
 
 ---
+
 
 ## 📊 At a Glance
 
@@ -103,7 +104,7 @@ Authored modular workflow guides breaking each task into stages with explicit ex
 :::challenge
 **⚡ Challenge:** 
 
-Help copy must surface at the exact moment of need *and* be specific enough that search works. 
+Help copy must surface at the exact moment of need. For search to work, item names have to match what users type and not how the system categorises things internally.
 :::
 
 Designed the copy architecture for an embedded help library: searchable item naming, *What's New* announcement patterns.
@@ -146,7 +147,7 @@ Audited the full SharePoint library and split content into two tracks:
 :::challenge
 **⚡ Challenge:** 
 
-Icon labels and micro UI are the most constrained UX copy—2–4 words. They need to communicate essential functions without  supporting context. 
+Icon labels and micro UI are the most constrained UX copy—2–4 words. They need to communicate essential functions without supporting context. 
 :::
 
 Audited icons and action buttons against their intended function. Rewrote using task-based language and delivered an icon-label mapping doc as a developer handoff artifact.
@@ -176,7 +177,7 @@ Audited icons and action buttons against their intended function. Rewrote using 
 :::challenge
 **⚡ Challenge:** 
 
-System messages must be actionable and consistent—across every state. Copy also had to serve a junior planner's first error and a senior architect's quick confirmation simultaneously.
+System messages must be actionable and consistent across every state. Copy also had to serve a junior planner's first error and a senior architect's quick confirmation simultaneously.
 :::
 
 Documented reusable toast and tooltip components with full state coverage.
@@ -238,8 +239,10 @@ Copy rationale in component docs means the team extends patterns correctly witho
 ## 👉 What's Next
 
 - **Usability testing** on new components: measure completion time and error rates against pre-copy baselines
-- **Consolidated UDS writing guide**—one reference for tone, terminology, and component copy patterns
-- **Search query interviews**—what users type vs. what articles are named is a gap that compounds silently
+- **Consolidated UDS writing guide**: one reference for tone, terminology, and component copy patterns
+- **Search query interviews**: what users type vs. what articles are named is a gap that compounds silently
+<br></br>
+
 
 ---
 

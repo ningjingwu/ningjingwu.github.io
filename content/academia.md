@@ -8,7 +8,7 @@ description: Content Strategy, Writing & Technical Communication Case Study
 ## Scaling Content Production at Academia Education
 
 :::tagline
-Content Strategy, Editorial Writing & Technical Communication | Case Study
+Content Strategy, Technical Communication & Editorial Writing
 :::
 
 </div>
@@ -39,15 +39,11 @@ students and educators reached
 :::
 :::metric
 **1 pipeline**
-content audit → standards → layout → QA → release
+draft → standards → layout → QA → release
 :::
 :::metric
 **0 vendors**
 external layout dependency eliminated
-:::
-:::metric
-**1 handoff**
-documentation + training to sustain the system
 :::
 ::::
 
@@ -72,18 +68,67 @@ Academia's instructional materials were spread across Drive folders, written by 
 - Google Docs structure aligned to InDesign styles
 - Defined pipeline from draft to print-ready PDF
 - QA process with two explicit review passes
-- Handoff docs enabling self-serve future production
 :::
 ::::
 
 ---
+
+### 📝 Research, Writing & Editorial Work
+
+:::challenge
+**⚡ Challenge:**
+
+The publication covered 11 topics across politics, media, science, and culture. Chapters came from multiple contributors with different writing styles and levels of research depth, and all of it had to meet the same standard for a specific audience: Singapore A-level students preparing for Paper 1.
+:::
+
+![Content Page](assets/academia_contents.PNG)
+
+Researched and wrote original chapters covering topics including economics, globalisation, food security, and AI and automation. Drew on academic sources, policy documents, and current affairs to keep content accurate and examination-relevant. Editorial passes for tone, accuracy, and instructional clarity were conducted on contributor chapters to ensure consistency.
+
+:::outcomes
+**✅ Outcomes**
+- 11 topics researched, written,  and editorially reviewed across a 180+ page publication
+- Fact-checked against academic, policy, and journalistic sources
+- Consistent voice and register across all contributor chapters
+:::
+
+
+---
+### ✏️ Content Style Guidelines
+
+:::challenge
+**⚡ Challenge:** 
+
+Multiple contributors meant multiple instincts about what a heading, caption, or exercise instruction should contain. Without shared conventions, every draft needed editorial intervention before it could be edited for content.
+:::
+
+Developed a content style guide covering four areas: **structure** (how chapters open, how sections close), **labelling** (heading and caption conventions tied to content type), **sequencing** (exercises follow the concept they apply, with explicit back-references), and **voice** (authoritative but not distant—consistent register across all contributors regardless of subject area). Guidelines were written into the authoring template directly so they were encountered in context, not as a separate document contributors had to remember to consult.
+
+| ❌ Before | ✅ After |
+|---|---|
+| "See the worksheet below for practice" | "Complete Exercise 3.2 before reading the next section—it applies the concept above." |
+| Heading: "Notes" | Heading: "Key Concepts—Chapter 3" |
+| Three contributor versions of the same intro | Single opening: scope, audience, and learning objective in the first paragraph |
+| Caption: "Figure 1" | Caption: "Figure 1—Annotated diagram of X and Y relationship (refer to Section 2.3)" |
+| Formal academic in one chapter, casual in the next | Consistent register: authoritative but not distant, precise but not jargon-heavy |
+| Exercises assume knowledge not yet introduced | Exercises follow concept introduction, with explicit back-reference |
+
+:::outcomes
+**✅ Outcomes**
+- Consistent labelling, voice, and sequencing across all contributor drafts
+- Editorial intervention reduced—drafts arrived closer to publishable standard
+- Guidelines embedded in the template meant compliance required no extra effort
+:::
+
+---
+
 
 ### 📄 Authoring Template → InDesign Pipeline
 
 :::challenge
 **⚡ Challenge:** 
 
-Without style alignment between Docs and InDesign, even well-structured drafts required manual reformatting on every import. Educators do not have the between classes to ensure perfect formatting, a simple universal template was needed. 
+Without style alignment between Docs and InDesign, even well-structured drafts required manual reformatting on every import. Educators do not have the time between classes to ensure perfect formatting, a simple universal template was needed. 
 :::
 
 Built a Google Docs template that embedded conventions directly into the structure—heading levels, caption formats, and bulleting. Mapped every Docs content type to a corresponding InDesign paragraph or object style, so imported content landed close to final format. Managed the full style library in InDesign: defining, naming, and maintaining paragraph styles, character styles, and object styles across master pages to ensure consistency as chapters were added. Built and operated the production system end-to-end—placing and flowing content, managing linked assets, enforcing typographic hierarchy and grid-based spacing, and preparing pages for export and QA.
@@ -103,7 +148,7 @@ Built a Google Docs template that embedded conventions directly into the structu
 
 ---
 
-
+<!--
 ### 🗂️ Content Audit & Source of Truth
 
 :::challenge
@@ -189,51 +234,7 @@ Shared Drive/
 :::
 
 ---
-### ✏️ Content Style Guidelines
 
-:::challenge
-**⚡ Challenge:** 
-
-Multiple contributors meant multiple instincts about what a heading, caption, or exercise instruction should contain. Without shared conventions, every draft needed editorial intervention before it could be edited for content.
-:::
-
-Developed a content style guide covering four areas: **structure** (how chapters open, how sections close), **labelling** (heading and caption conventions tied to content type), **sequencing** (exercises follow the concept they apply, with explicit back-references), and **voice** (authoritative but not distant—consistent register across all contributors regardless of subject area). Guidelines were written into the authoring template directly so they were encountered in context, not as a separate document contributors had to remember to consult.
-
-| ❌ Before | ✅ After |
-|---|---|
-| "See the worksheet below for practice" | "Complete Exercise 3.2 before reading the next section—it applies the concept above." |
-| Heading: "Notes" | Heading: "Key Concepts—Chapter 3" |
-| Three contributor versions of the same intro | Single opening: scope, audience, and learning objective in the first paragraph |
-| Caption: "Figure 1" | Caption: "Figure 1—Annotated diagram of X and Y relationship (refer to Section 2.3)" |
-| Formal academic in one chapter, casual in the next | Consistent register: authoritative but not distant, precise but not jargon-heavy |
-| Exercises assume knowledge not yet introduced | Exercises follow concept introduction, with explicit back-reference |
-
-:::outcomes
-**✅ Outcomes**
-- Consistent labelling, voice, and sequencing across all contributor drafts
-- Editorial intervention reduced—drafts arrived closer to publishable standard
-- Guidelines embedded in the template meant compliance required no extra effort
-:::
-
----
-
-### 🧩 Multi-Author Consolidation
-
-:::challenge
-**⚡ Challenge:** 
-
-Resolve structural conflicts, duplicated explanations, tone, and depth that varies chapter to chapter before any stylistic editing begins.
-:::
-
-Ran a structured consolidation pass: reviewed each contribution against the full manuscript, resolved structural issues first, wrote bridging copy where contributor transitions broke instructional tone. Consolidation completed before InDesign integration so layout started from a stable manuscript.
-
-:::outcomes
-**✅ Outcomes**
-- Single coherent manuscript from multi-author contributions
-- Structural conflicts resolved before layout—fewer late-stage disruptions
-:::
-
----
 
 ### 📦 Handoff Documentation
 
@@ -257,7 +258,7 @@ Wrote end-to-end pipeline documentation covering every stage: audit process, tem
 :::
 
 ---
-
+-->
 
 ## 💥 Impact
 
@@ -273,21 +274,19 @@ Repeatable in-house pipeline—Google Docs → InDesign → QA—replaced extern
 
 :::impact
 **A system that outlasted the internship**
-The durable outcome was the documentation. Pipeline, standards, QA checklist, and training materials future cohorts could run without the original builders.
+The durable outcome was the documentation. Pipeline, standards and QA checklist future cohorts could run without the original builders.
 :::
 
 ---
 
 ## 👉 What's Next
 
-- **Style guide expansion**—add terminology standards, tone by content type, and glossary management
-- **Contributor retrospective**—lightweight post-release feedback loop to improve the template each quarter
-- **Content reuse tagging**—tag repeatable components (concept explanations, worked examples) to cut redundant authoring
-- **Version control migration**—move beyond Google Docs versioning for cleaner history and easier audits at scale
 
+- **Style guide expansion**—add terminology standards, tone by content type, and glossary management
+- **Version control migration**—move beyond Google Docs versioning for cleaner history and easier audits at scale
+<br></br>
 
 ---
-
 :::footer-note
 This case study contains approved, non-proprietary content only. Visuals may be reconstructed or anonymised to protect internal materials.
 :::

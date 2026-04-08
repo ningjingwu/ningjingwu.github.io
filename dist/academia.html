@@ -1,9 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script>
+  (function() {
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark" || saved === "light") {
+      document.documentElement.setAttribute("data-theme", saved);
+    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Scaling Content Production at Academia — Ning's Portfolio</title>
+  <link type="image/png" sizes="16x16" rel="icon" href="../assets/Favicon/icons8-n-badges-16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="../assets/Favicon/icons8-n-badges-32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="../assets/Favicon/icons8-n-badges-96.png">
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="case-study-containers.css" />
   <script defer src="../script.js"></script>
@@ -16,7 +29,7 @@
     <div style="text-align: center;">
 <h2>Scaling Content Production at Academia Education</h2>
 <div class="container-tagline">
-<p>Content Strategy, Editorial Writing &amp; Technical Communication | Case Study</p>
+<p>Content Strategy, Technical Communication &amp; Editorial Writing</p>
 </div>
 </div>
 <!-- 📸 IMAGE (Hero): Collage—anonymised final instructional spread, Google Docs template, QA checklist snippet. Shows content + system + execution at a glance. -->
@@ -61,15 +74,11 @@ students and educators reached</p>
 </div>
 <div class="container-metric">
 <p><strong>1 pipeline</strong>
-content audit → standards → layout → QA → release</p>
+draft → standards → layout → QA → release</p>
 </div>
 <div class="container-metric">
 <p><strong>0 vendors</strong>
 external layout dependency eliminated</p>
-</div>
-<div class="container-metric">
-<p><strong>1 handoff</strong>
-documentation + training to sustain the system</p>
 </div>
 </div>
 <hr>
@@ -93,111 +102,30 @@ documentation + training to sustain the system</p>
 <li>Google Docs structure aligned to InDesign styles</li>
 <li>Defined pipeline from draft to print-ready PDF</li>
 <li>QA process with two explicit review passes</li>
-<li>Handoff docs enabling self-serve future production</li>
 </ul>
 </div>
 </div>
 <hr>
-<h3>📄 Authoring Template → InDesign Pipeline</h3>
+<h3>📝 Research, Writing &amp; Editorial Work</h3>
 <div class="container-challenge">
 <p><strong>⚡ Challenge:</strong></p>
-<p>Standards fail when they require a workshop to follow. The bigger problem: without style alignment between Docs and InDesign, even well-structured drafts required manual reformatting on every import.</p>
+<p>The publication covered 11 topics across politics, media, science, and culture. Chapters came from multiple contributors with different writing styles and levels of research depth, and all of it had to meet the same standard for a specific audience: Singapore A-level students preparing for Paper 1.</p>
 </div>
-<p>Built a Google Docs template that embedded conventions directly into the structure—heading levels, caption formats, and bulleting. Mapped every Docs content type to a corresponding InDesign paragraph or object style, so imported content landed close to final format. Managed the full style library in InDesign: defining, naming, and maintaining paragraph styles, character styles, and object styles across master pages to ensure consistency as chapters were added. Built and operated the production system end-to-end—placing and flowing content, managing linked assets, enforcing typographic hierarchy and grid-based spacing, and preparing pages for export and QA.</p>
-<p><img src="assets/academia_word.png" alt="Google Docs Template">
-<img src="assets/academia_indesign_1.png" alt="Full InDesign style library">
-<em>Google Docs template with styles  mapped to InDesign template</em></p>
+<p><img src="assets/academia_contents.PNG" alt="Content Page"></p>
+<p>Researched and wrote original chapters covering topics including economics, globalisation, food security, and AI and automation. Drew on academic sources, policy documents, and current affairs to keep content accurate and examination-relevant. Editorial passes for tone, accuracy, and instructional clarity were conducted on contributor chapters to ensure consistency.</p>
 <div class="container-outcomes">
 <p><strong>✅ Outcomes</strong></p>
 <ul>
-<li>Shared Docs template replaced ad hoc formatting across all contributors</li>
-<li>Docs-to-InDesign style mapping made import predictable—minimal reformatting per chapter</li>
-<li>Full InDesign style library maintained across master pages and all chapter files</li>
-<li>Consistent typographic hierarchy and layout grid across the full release</li>
-<li>Layout production repeatable, not bespoke</li>
-</ul>
-</div>
-<hr>
-<h3>🗂️ Content Audit &amp; Source of Truth</h3>
-<div class="container-challenge">
-<p><strong>⚡ Challenge:</strong></p>
-<p>Chapters and research were scattered across folder and an disorganised collaborative effort made it so that multiple versions of contested content. There was no clear decision on which version of the content was final as no single person was the authorative author.</p>
-</div>
-<p>Catalogued the full Drive, mapped ownership, identified duplicates, and resolved version conflicts. Produced a governed source folder with a naming convention, an Excel tracking sheet, and an audit log of every merge, cut, and superseded draft.</p>
-<pre><code>File tree before audit: 
-
-Shared Drive/
-├── GP Curriculum/
-│   ├── Globalisation/
-│   │   ├── Globalisation Effects and Impacts.docx
-│   │   ├── globalisation final FINAL.docx
-│   │   ├── GLOB essay notes (teacher edits).docx
-│   │   └── Old/
-│   │       └── Globalisation_ Effects and Impacts.docx
-│   │
-│   ├── Media/
-│   │   ├── MEDIA privacy.docx
-│   │   ├── Privacy and Data Protection SG (rev 2).docx
-│   │   ├── Media ignorance notes.docx
-│   │   └── P1 media issues + privacy.docx
-│   │
-│   └── ...
-│
-├── Archive/
-│   ├── 2023 Term 1/
-│   ├── 2023 Term 2/
-│   └── To sort/
-│
-└──Tracking/
-    ├── content tracker.xlsx
-    ├── content tracker (new).xlsx
-    └── missing topics list.docx
-</code></pre>
-<pre><code>File tree after audit: 
-
-Shared Drive/
-├── 00_General_Paper_Source_Folder/
-│   ├── 00_TRACKING
-│   │   ├── Content_Tracker.xlsx
-│   │   └── Audit_Log.xlsx
-│   │
-│   ├── 01 GLOB01
-│   │   ├── Globalisation_ Effects and Impacts.docx
-│   │   ├── L5 GLOB01 International Organisations Ineffective Essay Notes.docx
-│   │   └── L5 GLOB01 Price For Globalisation Essay Notes.docx
-│   │
-│   ├── 02 MEDIA04
-│   │   └── P2 MEDIA04 The State of Privacy and Data Protection in Singapore.docx
-│   │
-│   ├── ...
-│   │
-│   └── 11 ARTHUM03
-│       ├── L5 ARTHUM03 History Constrain Or Propel Essay Notes.docx
-│       ├── L5 ARTHUM03 Museum Value.docx
-│       └── P1 ARTHUM03 The value of the Humanities_ History &amp; Society.docx
-│
-├── Archive/
-│   ├── 2024 Term 1/
-│   ├── 2024 Term 2/
-│   └── To sort/
-│
-└── Legacy_Folders/
-    ├── GP Curriculum 2023/
-    └── For Layout Vendor/
-
-</code></pre>
-<div class="container-outcomes">
-<p><strong>✅ Outcomes</strong></p>
-<ul>
-<li>Conducted a complete content inventory</li>
-<li>Single authoritative source set—no more version ambiguity going into layout</li>
+<li>11 topics researched, written,  and editorially reviewed across a 180+ page publication</li>
+<li>Fact-checked against academic, policy, and journalistic sources</li>
+<li>Consistent voice and register across all contributor chapters</li>
 </ul>
 </div>
 <hr>
 <h3>✏️ Content Style Guidelines</h3>
 <div class="container-challenge">
 <p><strong>⚡ Challenge:</strong></p>
-<p>Multiple contributors meant multiple instincts about what a heading, caption, or exercise instruction should look like. Without shared conventions, every draft needed editorial intervention before it could be edited for content.</p>
+<p>Multiple contributors meant multiple instincts about what a heading, caption, or exercise instruction should contain. Without shared conventions, every draft needed editorial intervention before it could be edited for content.</p>
 </div>
 <p>Developed a content style guide covering four areas: <strong>structure</strong> (how chapters open, how sections close), <strong>labelling</strong> (heading and caption conventions tied to content type), <strong>sequencing</strong> (exercises follow the concept they apply, with explicit back-references), and <strong>voice</strong> (authoritative but not distant—consistent register across all contributors regardless of subject area). Guidelines were written into the authoring template directly so they were encountered in context, not as a separate document contributors had to remember to consult.</p>
 <table>
@@ -243,37 +171,137 @@ Shared Drive/
 </ul>
 </div>
 <hr>
-<h3>🧩 Multi-Author Consolidation</h3>
+<h3>📄 Authoring Template → InDesign Pipeline</h3>
 <div class="container-challenge">
 <p><strong>⚡ Challenge:</strong></p>
-<p>Resolve structural conflicts, duplicated explanations, tone, and depth that varies chapter to chapter before any stylistic editing begins.</p>
+<p>Without style alignment between Docs and InDesign, even well-structured drafts required manual reformatting on every import. Educators do not have the time between classes to ensure perfect formatting, a simple universal template was needed.</p>
 </div>
-<p>Ran a structured consolidation pass: reviewed each contribution against the full manuscript, resolved structural issues first, wrote bridging copy where contributor transitions broke instructional tone. Consolidation completed before InDesign integration so layout started from a stable manuscript.</p>
+<p>Built a Google Docs template that embedded conventions directly into the structure—heading levels, caption formats, and bulleting. Mapped every Docs content type to a corresponding InDesign paragraph or object style, so imported content landed close to final format. Managed the full style library in InDesign: defining, naming, and maintaining paragraph styles, character styles, and object styles across master pages to ensure consistency as chapters were added. Built and operated the production system end-to-end—placing and flowing content, managing linked assets, enforcing typographic hierarchy and grid-based spacing, and preparing pages for export and QA.</p>
+<p><img src="assets/academia_word.png" alt="Google Docs Template">
+<img src="assets/academia_indesign_1.png" alt="Full InDesign style library">
+<em>Google Docs template with styles mapped directly to a ready for print InDesign template</em></p>
 <div class="container-outcomes">
 <p><strong>✅ Outcomes</strong></p>
 <ul>
-<li>Single coherent manuscript from multi-author contributions</li>
-<li>Structural conflicts resolved before layout—fewer late-stage disruptions</li>
+<li>Shared Docs template replaced ad hoc formatting across all contributors</li>
+<li>Docs-to-InDesign style mapping made import predictable—minimal reformatting per chapter</li>
+<li>Full InDesign style library maintained across master pages and all chapter files</li>
+<li>Consistent typographic hierarchy and layout grid across the full release</li>
+<li>Repeatable layout production</li>
 </ul>
 </div>
 <hr>
-<h3>📦 Handoff Documentation</h3>
-<div class="container-challenge">
-<p><strong>⚡ Challenge:</strong></p>
-<p>Handoff docs should record key decision making steps and outlines the entire pipeline process to ensure the system survives a personnel change.</p>
-</div>
-<p>Wrote end-to-end pipeline documentation covering every stage: audit process, template usage, Docs-to-InDesign style alignment, consolidation conventions, InDesign system structure, QA checklist, and release procedure. Also wrote a self-serve contributor training guide designed to onboard someone in a single sitting.</p>
-<p><img src="assets/academia_handoff.png" alt="End-to-end handoff documentation">
-<em>End-to-end handoff documentation</em></p>
-<div class="container-outcomes">
-<p><strong>✅ Outcomes</strong></p>
-<ul>
-<li>Full pipeline documented and handed off</li>
-<li>Future cohorts ran production without prior institutional knowledge</li>
-<li>Eliminated the single-point-of-failure dynamic that caused the original breakdown</li>
-</ul>
-</div>
-<hr>
+<!--
+### 🗂️ Content Audit & Source of Truth
+
+:::challenge
+**⚡ Challenge:**
+
+Chapters and research were scattered across folder and an disorganised collaborative effort made it so that there were multiple versions of contested content. There was no clear decision on which version of the content was final as no single person was the authorative author.
+:::
+
+Catalogued the full Drive, mapped ownership, identified duplicates, and resolved version conflicts. Produced a governed source folder with a naming convention, an Excel tracking sheet, and an audit log of every merge, cut, and superseded draft.
+
+
+```
+File tree before audit: 
+
+Shared Drive/
+├── GP Curriculum/
+│   ├── Globalisation/
+│   │   ├── Globalisation Effects and Impacts.docx
+│   │   ├── globalisation final FINAL.docx
+│   │   ├── GLOB essay notes (teacher edits).docx
+│   │   └── Old/
+│   │       └── Globalisation_ Effects and Impacts.docx
+│   │
+│   ├── Media/
+│   │   ├── MEDIA privacy.docx
+│   │   ├── Privacy and Data Protection SG (rev 2).docx
+│   │   ├── Media ignorance notes.docx
+│   │   └── P1 media issues + privacy.docx
+│   │
+│   └── ...
+│
+├── Archive/
+│   ├── 2023 Term 1/
+│   ├── 2023 Term 2/
+│   └── To sort/
+│
+└──Tracking/
+    ├── content tracker.xlsx
+    ├── content tracker (new).xlsx
+    └── missing topics list.docx
+```
+
+
+```
+File tree after audit: 
+
+Shared Drive/
+├── 00_General_Paper_Source_Folder/
+│   ├── 00_TRACKING
+│   │   ├── Content_Tracker.xlsx
+│   │   └── Audit_Log.xlsx
+│   │
+│   ├── 01 GLOB01
+│   │   ├── Globalisation_ Effects and Impacts.docx
+│   │   ├── L5 GLOB01 International Organisations Ineffective Essay Notes.docx
+│   │   └── L5 GLOB01 Price For Globalisation Essay Notes.docx
+│   │
+│   ├── 02 MEDIA04
+│   │   └── P2 MEDIA04 The State of Privacy and Data Protection in Singapore.docx
+│   │
+│   ├── ...
+│   │
+│   └── 11 ARTHUM03
+│       ├── L5 ARTHUM03 History Constrain Or Propel Essay Notes.docx
+│       ├── L5 ARTHUM03 Museum Value.docx
+│       └── P1 ARTHUM03 The value of the Humanities_ History & Society.docx
+│
+├── Archive/
+│   ├── 2024 Term 1/
+│   ├── 2024 Term 2/
+│   └── To sort/
+│
+└── Legacy_Folders/
+    ├── GP Curriculum 2023/
+    └── For Layout Vendor/
+
+```
+
+:::outcomes
+**✅ Outcomes**
+- Conducted a complete content inventory
+- Single authoritative source set—no more version ambiguity going into layout
+:::
+
+---
+
+
+### 📦 Handoff Documentation
+
+:::challenge
+**⚡ Challenge:** 
+
+Handoff docs should record key decision making steps and outlines the entire pipeline process to ensure the system survives a personnel change.
+:::
+
+Wrote end-to-end pipeline documentation covering every stage: audit process, template usage, Docs-to-InDesign style alignment, consolidation conventions, InDesign system structure, QA checklist, and release procedure. Also wrote a self-serve contributor training guide designed to onboard someone in a single sitting.
+
+
+![End-to-end handoff documentation](assets/academia_handoff.png)
+*End-to-end handoff documentation*
+
+:::outcomes
+**✅ Outcomes**
+- Full pipeline documented and handed off
+- Future cohorts ran production without prior institutional knowledge
+- Eliminated the single-point-of-failure dynamic that caused the original breakdown
+:::
+
+---
+-->
 <h2>💥 Impact</h2>
 <div class="container-impact">
 <p><strong>~2 weeks cut from production time</strong>
@@ -285,15 +313,14 @@ Repeatable in-house pipeline—Google Docs → InDesign → QA—replaced extern
 </div>
 <div class="container-impact">
 <p><strong>A system that outlasted the internship</strong>
-The durable outcome was the documentation. Pipeline, standards, QA checklist, and training materials future cohorts could run without the original builders.</p>
+The durable outcome was the documentation. Pipeline, standards and QA checklist future cohorts could run without the original builders.</p>
 </div>
 <hr>
 <h2>👉 What’s Next</h2>
 <ul>
 <li><strong>Style guide expansion</strong>—add terminology standards, tone by content type, and glossary management</li>
-<li><strong>Contributor retrospective</strong>—lightweight post-release feedback loop to improve the template each quarter</li>
-<li><strong>Content reuse tagging</strong>—tag repeatable components (concept explanations, worked examples) to cut redundant authoring</li>
-<li><strong>Version control migration</strong>—move beyond Google Docs versioning for cleaner history and easier audits at scale</li>
+<li><strong>Version control migration</strong>—move beyond Google Docs versioning for cleaner history and easier audits at scale
+<br></br></li>
 </ul>
 <hr>
 <div class="container-footer-note">
@@ -302,19 +329,19 @@ The durable outcome was the documentation. Pipeline, standards, QA checklist, an
 
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-left"><a href="#" target="_blank" rel="noreferrer"> </a></div>
+<footer class="site-footer">
+  <div class="footer-inner">
+      <div class="footer-left"><a href="/design-portfolio" target="_blank" rel="noreferrer">Design Portfolio </a></div>
 
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/ningjing-wu/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="mailto:wu.ning.jing.2001@gmail.com">Contact</a>
-
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
           <span aria-hidden="true">◐</span>
         </button>
-      </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>

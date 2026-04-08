@@ -1,9 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script>
+  (function() {
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark" || saved === "light") {
+      document.documentElement.setAttribute("data-theme", saved);
+    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Urban Redevelopment Authority: Documenting ePlanner 3D — Ning's Portfolio</title>
+  <link type="image/png" sizes="16x16" rel="icon" href="../assets/Favicon/icons8-n-badges-16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="../assets/Favicon/icons8-n-badges-32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="../assets/Favicon/icons8-n-badges-96.png">
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="case-study-containers.css" />
   <script defer src="../script.js"></script>
@@ -16,7 +29,7 @@
     <div style="text-align: center;">
 <h2>Singapore Urban Redevelopment Authority: Documenting ePlanner 3D</h2>
 <div class="container-tagline">
-<p>UX Writing &amp; Technical Communication | Case Study</p>
+<p>Technical Writing &amp; Audience Research</p>
 </div>
 </div>
 <div class="container-meta-row">
@@ -86,8 +99,8 @@ SharePoint → Confluence and native in-product UI</p>
 <div class="container-col">
 <p><strong>⛓️ Constraints</strong></p>
 <ul>
-<li>ArcGIS Calcite + internal UDS vocabulary</li>
-<li>Limited screen space—every word competes</li>
+<li>ArcGIS Calcite + internal URA Design System (UDS) vocabulary</li>
+<li>Limited screen space</li>
 <li>Copy had to ship within existing component constraints</li>
 </ul>
 </div>
@@ -116,7 +129,7 @@ SharePoint → Confluence and native in-product UI</p>
 <h3>🤚 In-Product Help Navigation</h3>
 <div class="container-challenge">
 <p><strong>⚡ Challenge:</strong></p>
-<p>Help copy must surface at the exact moment of need <em>and</em> be specific enough that search works. User vocabulary and system taxonomy rarely match—bridging that gap is the writing problem.</p>
+<p>Help copy must surface at the exact moment of need. For search to work, item names have to match what users type and not how the system categorises things internally.</p>
 </div>
 <p>Designed the copy architecture for an embedded help library: searchable item naming, <em>What’s New</em> announcement patterns.</p>
 <p><img src="assets/ura_helpcentre.png" alt="New searchable help interface">
@@ -150,7 +163,7 @@ SharePoint → Confluence and native in-product UI</p>
 <h3>🎯 Icon Labels and Micro UI Audit</h3>
 <div class="container-challenge">
 <p><strong>⚡ Challenge:</strong></p>
-<p>Icon labels and micro UI are the most constrained UX copy—2–4 words. They need to communicate essential functions without  supporting context.</p>
+<p>Icon labels and micro UI are the most constrained UX copy—2–4 words. They need to communicate essential functions without supporting context.</p>
 </div>
 <p>Audited icons and action buttons against their intended function. Rewrote using task-based language and delivered an icon-label mapping doc as a developer handoff artifact.</p>
 <table>
@@ -199,10 +212,10 @@ SharePoint → Confluence and native in-product UI</p>
 <h3>💬 UDS Component Writing—Toasts &amp; Tooltips</h3>
 <div class="container-challenge">
 <p><strong>⚡ Challenge:</strong></p>
-<p>System messages must be actionable and consistent—across every state. Copy also had to serve a junior planner’s first error and a senior architect’s quick confirmation simultaneously.</p>
+<p>System messages must be actionable and consistent across every state. Copy also had to serve a junior planner’s first error and a senior architect’s quick confirmation simultaneously.</p>
 </div>
 <p>Documented reusable toast and tooltip components with full state coverage.</p>
-<p><img src="assets/ura_tooltip.png" alt="ePlanner 3D legacy interface">
+<p><img src="assets/ura_tooltip.png" alt="Tooltip component added to in-house design system">
 <em>Tooltip component added to in-house design system</em></p>
 <div class="container-outcomes">
 <p><strong>✅ Outcomes</strong></p>
@@ -245,8 +258,9 @@ SharePoint → Confluence and native in-product UI</p>
 <h2>👉 What’s Next</h2>
 <ul>
 <li><strong>Usability testing</strong> on new components: measure completion time and error rates against pre-copy baselines</li>
-<li><strong>Consolidated UDS writing guide</strong>—one reference for tone, terminology, and component copy patterns</li>
-<li><strong>Search query interviews</strong>—what users type vs. what articles are named is a gap that compounds silently</li>
+<li><strong>Consolidated UDS writing guide</strong>: one reference for tone, terminology, and component copy patterns</li>
+<li><strong>Search query interviews</strong>: what users type vs. what articles are named is a gap that compounds silently
+<br></br></li>
 </ul>
 <hr>
 <div class="container-footer-note">
@@ -255,19 +269,19 @@ SharePoint → Confluence and native in-product UI</p>
 
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-left"><a href="#" target="_blank" rel="noreferrer"> </a></div>
+<footer class="site-footer">
+  <div class="footer-inner">
+      <div class="footer-left"><a href="/design-portfolio" target="_blank" rel="noreferrer">Design Portfolio </a></div>
 
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/ningjing-wu/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="mailto:wu.ning.jing.2001@gmail.com">Contact</a>
-
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
           <span aria-hidden="true">◐</span>
         </button>
-      </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>

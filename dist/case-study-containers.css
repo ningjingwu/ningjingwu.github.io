@@ -27,6 +27,11 @@ html[data-theme="dark"] {
   --impact-bar:   #89b7ff;
   --info-bg:      rgba(148, 163, 184, 0.08);
   --info-bar:     #94a3b8;
+  --accent: #60a5fa;
+}
+
+h2, h3, h4 {
+  font-weight: 500;
 }
 
 /* ── Shared callout base ─────────────────────────────────────── */
@@ -85,6 +90,12 @@ html[data-theme="dark"] {
   white-space: nowrap;
 }
 
+.container-meta-row {
+  background: var(--accent-soft);
+  border-radius: var(--radius);
+  padding: 4px 12px;
+}
+
 /* ── Metrics grid ────────────────────────────────────────────── */
 .container-metrics {
   display: grid;
@@ -96,19 +107,19 @@ html[data-theme="dark"] {
 .container-metric {
   border: 1px solid var(--metric-border);
   border-top: 3px solid var(--accent);
-  background: var(--metric-bg);
+  background: var(--accent-soft); /* change from var(--metric-bg) */
   padding: 16px 18px;
   border-radius: var(--radius);
 }
 .container-metric p:first-child {
   margin: 0 0 6px;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--accent);
   line-height: 1;
 }
 .container-metric p:first-child strong {
-  font-weight: 800;
+  font-weight: 500;
   color: var(--accent);
 }
 .container-metric:last-child:nth-child(odd) {
@@ -163,7 +174,7 @@ html[data-theme="dark"] {
 .container-challenge p:first-child {
   margin-top: 0;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.10em;
   color: var(--challenge-bar);
@@ -181,7 +192,7 @@ html[data-theme="dark"] {
 .container-outcomes p:first-child {
   margin-top: 0;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.10em;
   color: var(--outcomes-bar);
@@ -248,7 +259,7 @@ html[data-theme="dark"] {
 }
 .container-process-card p:first-child {
   margin-top: 0;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 14px;
   color: var(--text);
   margin-bottom: 8px;
@@ -282,7 +293,7 @@ table th {
   text-align: left;
   padding: 8px 12px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.06em;
   border-bottom: 2px solid var(--border);

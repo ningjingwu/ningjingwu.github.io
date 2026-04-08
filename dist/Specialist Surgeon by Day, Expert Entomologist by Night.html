@@ -1,9 +1,22 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script>
+  (function() {
+    const saved = localStorage.getItem("theme");
+    if (saved === "dark" || saved === "light") {
+      document.documentElement.setAttribute("data-theme", saved);
+    } else if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      document.documentElement.setAttribute("data-theme", "dark");
+    }
+  })();
+</script>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Specialist Surgeon by Day, Expert Entomologist by Night: An Interview with Dr Francis Seow-Choen — Ning's Portfolio</title>
+  <link type="image/png" sizes="16x16" rel="icon" href="../assets/Favicon/icons8-n-badges-16.png">
+<link type="image/png" sizes="32x32" rel="icon" href="../assets/Favicon/icons8-n-badges-32.png">
+<link type="image/png" sizes="96x96" rel="icon" href="../assets/Favicon/icons8-n-badges-96.png">
   <link rel="stylesheet" href="../styles.css" />
   <link rel="stylesheet" href="case-study-containers.css" />
   <script defer src="../script.js"></script>
@@ -34,35 +47,38 @@
 </tr>
 <tr>
 <td> <strong>Role</strong></td>
-<td>Author (Content Writing &amp; Science Communication)</td>
+<td>Author (Feature Writing &amp; Science Communication)</td>
 </tr>
 <tr>
 <td> <strong>Focus</strong></td>
-<td>Interview-based science storytelling on entomology, taxonomy, and public engagement with biodiversity</td>
+<td>Interview-based profile translating specialist taxonomy research for a public museum audience</td>
 </tr>
 <tr>
 <td> <strong>Read</strong></td>
-<td><a href="https://lkcnhm.nus.edu.sg/specialist-surgeon-by-day-expert-entomologist-by-night-an-interview-with-dr-francis-seow-choen/">🔗 LKCNHM Article</a></td>
+<td><a href="https://lkcnhm.nus.edu.sg/specialist-surgeon-by-day-expert-entomologist-by-night-an-interview-with-dr-francis-seow-choen/" target="_blank" rel="noreferrer">🔗 Read Here</a></td>
 </tr>
 </tbody>
 </table>
 </div>
+<div class="container-lead">
+<p>Dr Seow-Choen is one of Southeast Asia’s leading colorectal surgeons—and also its foremost authority on stick insects. The task was writing for a museum audience, making taxonomy feel alive and personal without simplifying the subject matter or the person.</p>
+</div>
 
   </main>
 
-  <footer class="site-footer">
-    <div class="footer-inner">
-      <div class="footer-left"><a href="#" target="_blank" rel="noreferrer"> </a></div>
+<footer class="site-footer">
+  <div class="footer-inner">
+      <div class="footer-left"><a href="/design-portfolio" target="_blank" rel="noreferrer">Design Portfolio </a></div>
 
       <div class="footer-links">
         <a href="https://www.linkedin.com/in/ningjing-wu/" target="_blank" rel="noreferrer">LinkedIn</a>
         <a href="mailto:wu.ning.jing.2001@gmail.com">Contact</a>
-
-        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Toggle theme">
           <span aria-hidden="true">◐</span>
         </button>
-      </div>
     </div>
-  </footer>
+  </div>
+</footer>
+
 </body>
 </html>
