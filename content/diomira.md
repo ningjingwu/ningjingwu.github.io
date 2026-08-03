@@ -78,10 +78,11 @@ As an early-stage deep tech company, Diomira needed a clearer product story, a c
 :::challenge
 **⚡ Challenge:**
 
-Diomira’s product sits within a complex and specialist industry. The story needed to explain what the company was building without relying on dense technical language.
+Diomira’s product is complex and sit in a specialist industry. The story needed to explain what the company was building without relying on dense technical language.
 :::
 
 Structured the pitch around three pressures faced by smaller design firms. Positioned Diomira as a system that coordinates specialised tools, giving the team a clearer way to explain the product and its open-source direction.
+
 
 Developed the pitch deck and external-facing narrative to connect the technology with a recognisable business problem.
 
@@ -126,7 +127,7 @@ Designed the logo and established the visual direction across the pitch deck and
 ::::two-col
 
 :::col
-![Diomira visual identity](assets/diomira_7.PNG)
+![Diomira visual identity](assets/diomira_7.png)
 :::
 
 :::col
@@ -149,7 +150,7 @@ Designed the logo and established the visual direction across the pitch deck and
 :::challenge
 **⚡ Challenge:**
 
-Diomira had a limited marketing budget and little public proof at an early stage. We needed a fast way to attract attention before investing in a larger content programme.
+Diomira had a limited marketing budget and public proof at an early stage. We needed a fast way to attract attention before investing in a larger content programme.
 :::
 
 Selected X as the first testing channel because semiconductor, AI and startup conversations were already concentrated there. Over three days, published 60 posts covering industry commentary, technical culture and Diomira-related themes on the founder account.
